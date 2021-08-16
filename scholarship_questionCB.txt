@@ -1,0 +1,7 @@
+        CB Max scholarship Binary Search Question
+Instructor decides to give 100% scholarship to the needy students by taking an addmission test
+In order to avoid any losses to the institute, he has n students and m discount coupons.A student will get 100%
+waiver if he gets x discount coupons. in order to get more discount coupons in addition to those m he gets that
+who students who performs badly in the test need to pay additional amount equal to y discount coupons. good students
+earn coupons and weak students needs to pay to get the addmission. Find the max number of students who can get 100%
+scholorship in their fees. Will try to give 100% scholarship to the max number of students. 
