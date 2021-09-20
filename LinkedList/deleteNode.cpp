@@ -55,22 +55,22 @@ void deleteNode(Node **head, int key)
 }
 
 //Function to delete the node using recursion
-void deleteRec(Node *&head, int key)
+void deleteRec(Node **head, int key)
 {
-    if (head == NULL)
+    if ((*head) == NULL)
     {
         return;
     }
-    if ((head)->data == key)
+    if ((*head)->data == key)
     {
         //Delete the node if found
-        Node *temp = head;
-        head = temp->next;
+        Node *temp = *head;
+        (*head) = temp->next;
         delete (temp);
         return;
     }
     //change the pointer
-    deleteRec(head->next, key);
+    deleteRec(&((*head)->next), key);
 }
 int main()
 {
@@ -80,7 +80,7 @@ int main()
     pushFront(&head, 10);
     printList(head);
     deleteNode(&head, 8);
-    deleteRec(head, 10);
+    deleteRec(&head, 10);
     printList(head);
     return 0;
 }
